@@ -1,0 +1,255 @@
+ship Sparrowhawk
+	sprite ship/sparrowhawk
+	attributes
+		category Interceptor
+		licenses Friendly
+		cost 300000
+		"mass" 70
+		"outfit space" 210
+		"engine capacity" 40
+		"weapon capacity" 50
+		"shields" 1500
+		"hull" 400
+		"fuel capacity" 300
+		"heat dissipation" 0.9
+		"required crew" 1
+		"drag" 1
+		"radar jamming" 10
+		"bunks" 3
+	outfits
+		"Chipmunk Plasma Steering"
+		"Chipmunk Plasma Thruster"
+		"D14-RN Shield Generator"
+		Hyperdrive
+		"Ion Killer Cannon" 6
+		"LP072a Battery Pack"
+		"Water Coolant System"
+		"nGVF-DD Fuel Cell"
+	engine 0 41
+		zoom 2
+	gun -28 -18.5 "Ion Killer Cannon"
+	gun -19.5 -21 "Ion Killer Cannon"
+	gun -11.5 -24 "Ion Killer Cannon"
+	gun 11 -23.5 "Ion Killer Cannon"
+	gun 19.5 -21 "Ion Killer Cannon"
+	gun 28.5 -19 "Ion Killer Cannon"
+	description "Drawing from the basic design of the Sparrow, the engineers at Fire Corp upgraded it into the ship you see before you, a capable bounty hunter."
+	description "	Made entirely by Fire Corporation."
+
+ship Firestorm
+	sprite ship/firestrorm
+	attributes
+		category "Heavy Warship"
+		licenses Friendly
+		cost 9960000
+		"mass" 480
+		"outfit space" 540
+		"engine capacity" 120
+		"weapon capacity" 250
+		"cargo space" 80
+		"shields" 13400
+		"hull" 3500
+		"fuel capacity" 600
+		"heat dissipation" 0.8
+		"required crew" 50
+		"drag" 6.1
+		"bunks" 97
+		weapon
+			"blast radius" 300
+			"shield damage" 3000
+			"hull damage" 2000
+			"hit force" 2000
+	outfits
+		"Anti-Missile Turret"
+		"Breeder Reactor"
+		"D41-HY Shield Generator"
+		"Heavy Rocket" 50
+		"Heavy Rocket Launcher" 2
+		"Heavy Rocket Rack"
+		Hyperdrive
+		"Impala Plasma Steering"
+		"Impala Plasma Thruster"
+		"LP144a Battery Pack"
+		"Large Radar Jammer"
+		"Laser Rifle" 5
+		"Proton Gun" 2
+		"Proton Turret" 4
+	engine -58.5 116
+	engine 58.5 116
+	engine 0 131
+	gun -58.5 -4 "Heavy Rocket Launcher"
+	gun -31.5 14.5 "Proton Gun"
+	gun -18.5 10.5 "Proton Gun"
+	turret -58.5 54.5 "Proton Turret"
+	turret -13.5 103 "Proton Turret"
+	gun 58.5 -4 "Heavy Rocket Launcher"
+	gun 31.5 14.5
+	gun 18.5 10.5
+	turret 58.5 54.5 "Proton Turret"
+	turret 13.5 103 "Proton Turret"
+	turret 0 35.5 "Anti-Missile Turret"
+	explode "large explosion" 40
+	explode "medium explosion" 60
+	explode "small explosion" 55
+	explode "tiny explosion" 40
+	"final explode" "final explosion medium"
+	description "This time, the ship design came from the Falcon. Like the Sparrowhawk, this ship is meant for bounty hunters."
+	description "	Made entirely by Fire Corporation."
+
+ship Knife
+	plural Knives
+	sprite ship/knife
+	attributes
+		category "Medium Warship"
+		licenses Friendly
+		cost 5200000
+		"mass" 150
+		"outfit space" 450
+		"engine capacity" 101
+		"weapon capacity" 180
+		"cargo space" 75
+		"shields" 8000
+		"hull" 2200
+		"fuel capacity" 800
+		"heat dissipation" 0.7
+		"required crew" 16
+		"drag" 5
+		"bunks" 60
+		weapon
+			"blast radius" 80
+			"shield damage" 800
+			"hull damage" 500
+			"hit force" 1000
+	outfits
+		"Anti-Missile Turret"
+		"Breeder Reactor"
+		"D41-HY Shield Generator"
+		"Heavy Laser" 4
+		Hyperdrive
+		"Impala Plasma Steering"
+		"Impala Plasma Thruster"
+		"LP144a Battery Pack"
+		"Proton Turret" 3
+	engine -24.5 143.5
+	engine 24.5 143.5
+	turret -33 103.5 "Anti-Missile Turret"
+	gun -25 -112 "Heavy Laser"
+	gun -13 -130.5 "Heavy Laser"
+	turret 33 103.5 "Proton Turret"
+	gun 25 -112 "Heavy Laser"
+	gun 13 -130.5 "Heavy Laser"
+	turret 0 20.5 "Proton Turret"
+	turret 0 -62.5 "Proton Turret"
+	explode "large explosion" 3
+	explode "medium explosion" 10
+	explode "small explosion" 20
+	explode "tiny explosion" 10
+	"final explode" "final explosion medium"
+	description "The Knife is meant to be a versatile warship; however many captains consider it simply for combat. The high  crew-bunk ratio allows it to capture ships easier, and the cargo space is reasonably-sized."
+	description "	Made entirely by Fire Corporation."
+
+ship "Short Sword"
+	sprite "ship/short sword"
+	attributes
+		category "Heavy Warship"
+		licenses Friendly
+		cost 7300000
+		"mass" 220
+		"outfit space" 535
+		"engine capacity" 130
+		"weapon capacity" 230
+		"cargo space" 90
+		"shields" 12000
+		"hull" 3400
+		"fuel capacity" 700
+		"heat dissipation" 0.5
+		"required crew" 31
+		"drag" 8
+		"bunks" 87
+		weapon
+			"blast radius" 120
+			"shield damage" 1400
+			"hull damage" 800
+			"hit force" 2000
+	outfits
+		"Anti-Missile Turret" 2
+		"Breeder Reactor"
+		"D67-TM Shield Generator"
+		"Heavy Laser" 4
+		Hyperdrive
+		"Impala Plasma Steering"
+		"Impala Plasma Thruster"
+		"LP144a Battery Pack"
+		"Liquid Nitrogen Cooler"
+		"Proton Turret" 4
+	engine -26 219.5
+	engine 26 219.5
+	turret -37.5 156.5 "Proton Turret"
+	gun -28 -184.5 "Heavy Laser"
+	gun -14 -204.5 "Heavy Laser"
+	turret 37.5 156.5 "Proton Turret"
+	gun 28 -184.5 "Heavy Laser"
+	gun 14 -204.5 "Heavy Laser"
+	turret 0 136.5 "Proton Turret"
+	turret 0 19 "Proton Turret"
+	turret 0 -69 "Anti-Missile Turret"
+	turret 0 -129.5 "Anti-Missile Turret"
+	explode "large explosion" 3
+	explode "medium explosion" 10
+	explode "small explosion" 20
+	explode "tiny explosion" 10
+	"final explode" "final explosion medium"
+	description "The Short Sword is an upgraded Knife."
+	description "	Made entirely by Fire Corporation."
+
+ship "Mega Barge"
+	sprite "ship/mega barge"
+	attributes
+		category "Heavy Freighter"
+		licenses Friendly
+		cost 2500000
+		"mass" 520
+		"outfit space" 470
+		"engine capacity" 120
+		"weapon capacity" 140
+		"cargo space" 450
+		"shields" 2700
+		"hull" 8000
+		"fuel capacity" 500
+		"heat dissipation" 0.5
+		"required crew" 9
+		"drag" 14
+		"bunks" 32
+		weapon
+			"blast radius" 100
+			"shield damage" 1000
+			"hull damage" 500
+			"hit force" 1500
+	outfits
+		"Breeder Reactor"
+		"D67-TM Shield Generator"
+		"Heavy Anti-Missile Turret" 3
+		"LP144a Battery Pack"
+		"Large Radar Jammer"
+		"Laser Rifle" 3
+		"Liquid Nitrogen Cooler"
+		"Proton Turret"
+		"Scram Drive"
+		"X3700 Ion Thruster"
+		"X4200 Ion Steering"
+	engine -76 138.5
+	engine -52 138.5
+	engine 76 138.5
+	engine 52 138.5
+	turret 0.5 -61 "Heavy Anti-Missile Turret"
+	turret -0.5 -4.5 "Heavy Anti-Missile Turret"
+	turret 0.5 60 "Heavy Anti-Missile Turret"
+	turret 0.5 126.5 "Proton Turret"
+	explode "huge explosion" 5
+	explode "large explosion" 20
+	explode "medium explosion" 30
+	explode "small explosion" 15
+	"final explode" "final explosion large"
+	description "When our fans came inquiring if we were going to make a freighter, we answered with this. Here we have a lightly defended freighter built with large cargo-carrying arms."
+	description "	Made entirely by Fire Corporation."
+
