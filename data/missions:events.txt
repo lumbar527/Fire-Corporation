@@ -6,7 +6,7 @@ mission "Non-Pirate License Trigger"
 		not "non-pirate"
 		"reputation: Merchant" > 0
 	on offer
-		set "license: Not Pirate"
+		set "license: Friendly"
 		set "non-pirate"
 
 mission "You are Pirate"
@@ -16,7 +16,7 @@ mission "You are Pirate"
 	to offer
 		"reputation: Merchant" < 0
 	on offer
-		clear "license: Not Pirate"
+		clear "license: Friendly"
 		clear "non-pirate"
 
 mission "Marauder Sales"
