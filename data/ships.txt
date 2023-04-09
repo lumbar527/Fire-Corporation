@@ -252,4 +252,3 @@ ship "Mega Barge"
 	"final explode" "final explosion large"
 	description "When our fans came inquiring if we were going to make a freighter, we answered with this. Here we have a lightly defended freighter built with large cargo-carrying arms."
 	description "	Made entirely by Fire Corporation."
-
