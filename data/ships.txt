@@ -252,3 +252,54 @@ ship "Mega Barge"
 	"final explode" "final explosion large"
 	description "When our fans came inquiring if we were going to make a freighter, we answered with this. Here we have a lightly defended freighter built with large cargo-carrying arms."
 	description "	Made entirely by Fire Corporation."
+
+ship "Fire Assassin"
+	sprite "ship/fire assassin"
+	attributes
+		category "Heavy Warship"
+		licenses Friendly
+		cost 5000000
+		"mass" 280
+		"outfit space" 510
+		"engine capacity" 80
+		"weapon capacity" 260
+		"cargo space" 30
+		"shields" 7000
+		"hull" 3000
+		"fuel capacity" 400
+		"heat dissipation" 0.8
+		"required crew" 13
+		"drag" 6
+		"bunks" 30
+		weapon
+			"blast radius" 280
+			"shield damage" 2800
+			"hull damage" 2000
+			"hit force" 1800
+	outfits
+		"Breeder Reactor"
+		"D41-HY Shield Generator"
+		"Greyhound Plasma Steering"
+		"Greyhound Plasma Thruster"
+		Hyperdrive
+		"LP144a Battery Pack"
+		"Particle Sniper" 8
+	engine -31 96.5
+	engine 31 96.5
+	gun -90.5 40.5 "Particle Sniper"
+	gun -73.5 41 "Particle Sniper"
+	gun -57.5 40.5 "Particle Sniper"
+	gun -40.5 41 "Particle Sniper"
+	gun 90.5 40.5 "Particle Sniper"
+	gun 73.5 41 "Particle Sniper"
+	gun 57.5 40.5 "Particle Sniper"
+	gun 40.5 41 "Particle Sniper"
+	turret 0 61
+	explode "large explosion" 40
+	explode "medium explosion" 60
+	explode "small explosion" 55
+	explode "tiny explosion" 40
+	"final explode" "final explosion medium"
+	description "The Assassin is meant to be a use for the Particle Snipers. It has many gun ports to hold them, and brings terror from a distance. It can beat all medium warships it faces, though falters some against sheer toughness."
+	description "	Made entirely by Fire Corporation."
+
