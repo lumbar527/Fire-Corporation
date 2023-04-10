@@ -5,6 +5,7 @@ shipyard "Basic Ships"
 	"Knife"
 	"Short Sword"
 	"Mega Barge"
+	"Fire Assassin"
 
 shipyard Modified
 	"Marauder Arrow"
