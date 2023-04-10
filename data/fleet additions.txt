@@ -70,6 +70,13 @@ fleet "Large Southern Merchants"
 	add variant 30
 		"Mega Barge" 3
 		"Knife" 2
+	add variant 3
+		"Fire Assassin"
+		"Sparrowhawk" 4
+	add variant 3
+		"Fire Assassin"
+		"Sparrowhawk" 2
+		"Sparrow (Killer Ion)" 3
 
 fleet "Paradise Merchants"
 	add variant 2
@@ -166,6 +173,9 @@ fleet "Large Northern Merchants"
 	add variant 15
 		"Mega Barge" 3
 		"Short Sword"
+	add variant 15
+		"Mega Barge" 3
+		"Fire Assassin"
 
 fleet "Small Free Worlds"
 	add variant 8
@@ -336,6 +346,23 @@ fleet "Large Free Worlds"
 	add variant 2
 		"Short Sword"
 		"Hawk" 3
+	add variant 10
+		"Fire Assassin"
+	add variant 2
+		"Fire Assassin"
+		"Sparrowhawk" 4
+	add variant 2
+		"Fire Assassin"
+		"Sparrowhawk" 2
+		"Sparrow (Killer Ion)" 2
+	add variant 2
+		"Fire Assassin"
+		"Hawk" 3
+	add variant 2
+		"Fire Assassin"
+		"Hawk (Bomber)"
+		"Hawk (Plasma)" 2
+		
 
 fleet "Large Militia"
 	add variant 3
@@ -370,4 +397,15 @@ fleet "Large Militia"
 		"Sparrow (Killer Ion)" 2
 	add variant 2
 		"Short Sword"
+		"Hawk" 2
+	add variant 3
+		"Fire Assassin"
+	add variant 1
+		"Fire Assassin"
+		"Sparrowhawk" 2
+	add variant 1
+		"Fire Assassin"
+		"Sparrow (Killer Ion)" 2
+	add variant 1
+		"Fire Assassin"
 		"Hawk" 2
