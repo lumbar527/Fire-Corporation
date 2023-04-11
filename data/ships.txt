@@ -303,3 +303,59 @@ ship "Fire Assassin"
 	description "The Assassin is meant to be a use for the Particle Snipers. It has many gun ports to hold them, and brings terror from a distance. It can beat all medium warships it faces, though falters some against sheer toughness."
 	description "	Made entirely by Fire Corporation."
 
+ship Strongblade
+	sprite "ship/pirate strongblade"
+	attributes
+		category "Heavy Warship"
+		licenses Friendly
+		cost 6500000
+		"mass" 180
+		"outfit space" 510
+		"engine capacity" 110
+		"weapon capacity" 220
+		"cargo space" 50
+		"shields" 9000
+		"hull" 2800
+		"fuel capacity" 500
+		"heat dissipation" 0.6
+		"required crew" 16
+		"drag" 6
+		"bunks" 31
+		weapon
+			"blast radius" 120
+			"shield damage" 1400
+			"hull damage" 800
+			"hit force" 2000
+	outfits
+		"A370 Atomic Thruster"
+		"A375 Atomic Steering"
+		"Anti-Missile Turret"
+		"Cooling Ducts"
+		"Fusion Reactor"
+		Hyperdrive
+		"LP144a Battery Pack"
+		"Laser Rifle" 5
+		"Nerve Gas" 5
+		"Plasma Cannon" 4
+		"Quad Blaster Turret" 2
+		"S-970 Regenerator"
+		Torpedo 60
+		"Torpedo Launcher" 2
+	engine -41 189
+	engine 41 189
+	turret -0.5 141 "Quad Blaster Turret"
+	turret 0 50 "Quad Blaster Turret"
+	turret -0.5 -63.5 "Anti-Missile Turret"
+	gun -54.5 101 "Torpedo Launcher"
+	gun -22 -96.5 "Plasma Cannon"
+	gun -9.5 -165.5 "Plasma Cannon"
+	gun 54.5 101 "Plasma Cannon"
+	gun 22 -96.5 "Plasma Cannon"
+	gun 9.5 -165.5 "Torpedo Launcher"
+	explode "large explosion" 3
+	explode "medium explosion" 10
+	explode "small explosion" 20
+	explode "tiny explosion" 10
+	"final explode" "final explosion medium"
+	description "The Strongblade is one of the first ships produced by Pirates Inc. It is outfitted with Marauder stuff."
+
