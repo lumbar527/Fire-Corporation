@@ -1,0 +1,3 @@
+Tested Missions:
+
+Bounty Hunting (Surprise) was offered and works, but the <npc> was one of the Thorns.
