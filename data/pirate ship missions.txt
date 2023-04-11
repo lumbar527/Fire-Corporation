@@ -1,0 +1,90 @@
+mission "Bounty Hunting (Surprise)"
+	name "Wanted warlord near <system>"
+	description "A heavy warship known as the <npc> has been attacking merchants near the <system> system. Destroy it and return to <planet> by <day> for payment (<payment>)."
+	job
+	repeat 9
+	deadline 14
+	to offer
+		"combat rating" > 600
+		random < 40 + ("surprise warlord" * 10)
+	source
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+		attributes "rim" "south" "north" "dirt belt" "core" "frontier"
+	npc kill
+		government "Bounty"
+		personality heroic staying nemesis target
+#		system
+#			distance 1 1
+		fleet
+			names "pirate"
+			variant
+				"Strongblade"
+		dialog phrase "generic hunted bounty eliminated dialog"
+	on visit
+		dialog phrase "generic bounty hunting on visit"
+	on enter
+		dialog `When you leave <origin>, you are greeted with the <npc> right on top of you. It isn't a common pirate ship, and not one you see on non-pirates.`
+	on complete
+		"surprise warlord" ++
+		payment 350000
+		dialog phrase "generic bounty hunting payment dialog"
+
+mission "New Pirates 1"
+	name `Investigate pirates in <waypoints>`
+	description `Pirates seem to be using strange new ships. Fire Corporation wants you to go investigate, scanning if possible. They will be in <waypoints>."
+	source
+		government "Free Worlds"
+	waypoint Antares
+	to offer
+		"surprise warlord" > 6
+		"random" > 50
+		"combat rating" > 1000
+	on offer
+		conversation
+			`As you look around, you are startled with a sudden shout, "Hey! Captain <first>!"`
+			choice
+				`	"Yes?"`
+				`	"How do you know my name?"`
+					goto name
+				`	(Slip away silently)`
+					decline
+
+			label yes
+			`	"Hello, Captain <first>! I've long waited to see you! You have much fame!" He pauses, "But that's not the only reason I wanted to talk to you."`
+			choice
+				`	"What do you want?"`
+					goto mission
+				`	"I don't care. Goodbye!"`
+					decline
+
+			label name
+			`	"You are very well known amongst the employees of Fire Corporation. But let's leave that. I have a proposition for you."`
+			choice
+				`	"What proposition?"`
+					goto mission
+				`	"Sorry, I'm not interested."`
+					decline
+
+			label mission
+			`	"Would you be interested in going on a potentially dangerous mission to <waypoints> to scan some pirates? They seem to be making their own ships, and the heads of Fire Corporation would like to have more info."`
+			choice
+				`	"I'll take it!"`
+					accept
+				`	"Sorry, sounds too dangerous."`
+					decline
+
+	npc
+		system Antares
+		government "Pirate"
+		personality disables plunders harvests staying
+		fleet "Small Southern Pirates" 3
+	npc scan
+		system Antares
+		government "Pirate"
+		personality disables plunders harvests staying target
+		ship "Strongblade" "Shattering Might"
+
+	on complete
+		payment 1200000
+		conversation
+			`As you touch down, the Fire Corporation worker runs over to your ship. "Thank you, Captain <first>! Fire Corporation will be glad of this information!" He then waits until you step out, and hands you <payment>.`
