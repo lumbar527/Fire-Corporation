@@ -20,7 +20,7 @@ mission "You are Pirate"
 		clear "non-pirate"
 
 mission "Marauder Sales"
-	repeat
+#	repeat
 	invisible
 	landing
 	to offer
