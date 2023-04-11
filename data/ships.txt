@@ -357,5 +357,42 @@ ship Strongblade
 	explode "small explosion" 20
 	explode "tiny explosion" 10
 	"final explode" "final explosion medium"
-	description "The Strongblade is one of the first ships produced by Pirates Inc. It is outfitted with Marauder stuff."
+	description "The Strongblade is one of the first ships produced by Pirates Inc. It is a dangerous warship, and can beat other similar-sized warships."
+
+ship Thorn
+	sprite "ship/pirate thorn"
+	attributes
+		category Interceptor
+		cost 500000
+		"mass" 120
+		"outfit space" 240
+		"engine capacity" 60
+		"weapon capacity" 80
+		"shields" 3000
+		"hull" 800
+		"fuel capacity" 300
+		"heat dissipation" 0.8
+		"required crew" 1
+		"drag" 3
+		"bunks" 3
+	outfits
+		"Blaster Turret" 2
+		"D14-RN Shield Generator"
+		"Greyhound Plasma Steering"
+		"Greyhound Plasma Thruster"
+		Hyperdrive
+		Javelin 800
+		"Javelin Pod" 4
+		"LP036a Battery Pack"
+		"Nerve Gas"
+		"Small Radar Jammer"
+		"nGVF-BB Fuel Cell"
+	engine 0 23.5
+	turret -15.5 18.5 "Blaster Turret"
+	gun -60 9 "Javelin Pod"
+	gun -43.5 8.5 "Javelin Pod"
+	turret 15.5 18.5 "Blaster Turret"
+	gun 60 9 "Javelin Pod"
+	gun 43.5 8.5 "Javelin Pod"
+	description "The Thorn is a nimble yet powerful interceptor produced by Pirates Inc."
 

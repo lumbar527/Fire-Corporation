@@ -19,6 +19,9 @@ mission "Bounty Hunting (Surprise)"
 			names "pirate"
 			variant
 				"Strongblade"
+			variant
+				"Strongblade"
+				"Thorn" 2
 		dialog phrase "generic hunted bounty eliminated dialog"
 	on visit
 		dialog phrase "generic bounty hunting on visit"
@@ -83,6 +86,8 @@ mission "New Pirates 1"
 		government "Pirate"
 		personality disables plunders harvests staying target
 		ship "Strongblade" "Shattering Might"
+		ship "Thorn" "Backstab"
+		ship "Thorn" "Cruel Cutlas"
 
 	on complete
 		payment 1200000
