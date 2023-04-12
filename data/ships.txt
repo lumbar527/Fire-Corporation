@@ -522,6 +522,5 @@ ship "Flaming Sword"
 	explode "tiny explosion" 40
 	"final explode" "final explosion medium"
 	description "The Flaming Sword was designed using some basic interior design stolen from Pirates Inc. It is a very powerful warship designed for one thing: destroying piracy."
-	description "	If the Slicer is credited with being the greatest human warship, then the Flaming Sword is the most powerful in terms of raw strength."
 	description "	Made entirely by Fire Corporation."
 
