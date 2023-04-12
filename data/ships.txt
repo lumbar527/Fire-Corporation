@@ -396,3 +396,66 @@ ship Thorn
 	gun 43.5 8.5 "Javelin Pod"
 	description "The Thorn is a nimble yet powerful interceptor produced by Pirates Inc."
 
+ship Slicer
+	sprite "ship/pirate slicer"
+	attributes
+		category "Heavy Warship"
+		cost 15000000
+		"mass" 600
+		"outfit space" 820
+		"engine capacity" 160
+		"weapon capacity" 460
+		"cargo space" 80
+		"shields" 25000
+		"hull" 5000
+		"fuel capacity" 600
+		"heat dissipation" 0.7
+		"required crew" 48
+		"drag" 7
+		"bunks" 64
+		weapon
+			"blast radius" 300
+			"shield damage" 3000
+			"hull damage" 2000
+			"hit force" 2000
+	outfits
+		`"Bondir" Atomic Steering`
+		`"Bondir" Atomic Thruster`
+		"Anti-Missile Turret" 3
+		"Fusion Reactor"
+		"Hai Diamond Regenerator"
+		"Hai Tracker" 140
+		"Hai Tracker Pod" 2
+		"Jump Drive"
+		"LP144a Battery Pack"
+		"Laser Rifle" 20
+		"Liquid Nitrogen Cooler"
+		"Nerve Gas" 10
+		"Plasma Cannon" 4
+		"Proton Turret" 8
+		Ramscoop
+		"Tracker Storage Pod"
+	turret -146.5 78.5 "Proton Turret"
+	turret -116 109 "Proton Turret"
+	turret -86 139 "Proton Turret"
+	turret -55 169.5 "Proton Turret"
+	gun -107 50.5 "Hai Tracker Pod"
+	gun -81.5 71 "Plasma Cannon"
+	gun -48 87 "Plasma Cannon"
+	turret 0 58.5 "Anti-Missile Turret"
+	turret 0 6.5 "Anti-Missile Turret"
+	turret 0 -44 "Anti-Missile Turret"
+	turret 146.5 78.5 "Proton Turret"
+	turret 116 109 "Proton Turret"
+	turret 86 139 "Proton Turret"
+	turret 55 169.5 "Proton Turret"
+	gun 107 50.5 "Plasma Cannon"
+	gun 81.5 71 "Plasma Cannon"
+	gun 48 87 "Hai Tracker Pod"
+	explode "large explosion" 40
+	explode "medium explosion" 60
+	explode "small explosion" 55
+	explode "tiny explosion" 40
+	"final explode" "final explosion medium"
+	description "In Fire Corporation's campaign to destroy their rival, Pirates Inc., something had to be done. If Pirates Inc. failed, then pirates would have very little power. Therefore, Pirates Inc. produced their crowning ship, the Slicer."
+	description "	Some consider the Slicer to be the most powerful human-made warship. However, this leads to an argument about its armament, for it has some outfits of Hai origin."
