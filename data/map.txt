@@ -21,6 +21,9 @@ system "Hidden Queen"
 	trade Medical 905
 	trade Metal 443
 	trade Plastic 305
+	fleet "Large Northern Pirates" 1500
+	fleet "Large Core Pirates" 2200
+	fleet "Large Southern Pirates" 3000
 	object
 		sprite star/m3
 		period 10
