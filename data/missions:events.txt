@@ -20,13 +20,16 @@ mission "You are Pirate"
 		clear "non-pirate"
 
 mission "Marauder Sales"
-#	repeat
+	repeat
 	invisible
 	landing
 	to offer
 		"month" == 11
+		not "ms_on"
 	on offer
+		set "ms_on"
 		event "ms_on" 1
+		event "ms_off" 50
 		conversation
 			`You overhear some people say that there is a shipyard that will be only for Christmas on Wayfarer (in the Tarazed system).`
 
@@ -35,9 +38,10 @@ mission "Marauder Closing"
 	landing
 	repeat
 	to offer
+		has "Marauder Sales: active"
 		"month" == 2
 	on offer
-		event "ms_off" 1
+		clear "ms_on"
 		fail "Marauder Sales"
 
 event "ms_on"
@@ -46,4 +50,4 @@ event "ms_on"
 
 event "ms_off"
 	planet "Wayfarer"
-		add shipyard Modified
+		remove shipyard Modified
