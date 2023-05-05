@@ -15,7 +15,8 @@ start thorn
 			interest 0.01
 			term 364
 	set "license: Pilot's"
-	ship "Thorn" "Diamond Cutter"
+	ship "Thorn"
+		name "Diamond Cutter"
 		sprite "ship/pirate thorn"
 		attributes
 			category Interceptor
