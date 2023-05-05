@@ -8,6 +8,8 @@ ship Sparrow "Sparrow (Killer Ion)"
 		"Chipmunk Plasma Steering"
 		"Hyperdrive"
 
+# The Commander's ships
+
 ship "Short Sword" "Short Sword (Red)"
 	swizzle 0
 

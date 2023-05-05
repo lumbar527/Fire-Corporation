@@ -43,9 +43,9 @@ ship Firestorm
 		licenses Friendly
 		cost 9960000
 		"mass" 480
-		"outfit space" 540
+		"outfit space" 550
 		"engine capacity" 120
-		"weapon capacity" 250
+		"weapon capacity" 260
 		"cargo space" 80
 		"shields" 13400
 		"hull" 3500
@@ -374,7 +374,7 @@ ship Thorn
 		"heat dissipation" 0.8
 		"required crew" 1
 		"drag" 3
-		"bunks" 3
+		"bunks" 5
 	outfits
 		"Blaster Turret" 2
 		"D14-RN Shield Generator"
