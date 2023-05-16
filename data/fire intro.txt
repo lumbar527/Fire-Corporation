@@ -108,9 +108,9 @@ mission "New Pirates 2"
 		has "New Pirates 1: done"
 	on offer
 		conversation
-			`Before you can even walk back to your ship, the Fire Corporation employee runs back to you. "I just got a call from the Commodores! Can you go to <destination> to see if you can find the person making those ships we had you scan?"`
+			`Before you can even walk back to your ship, the Fire Corporation employee runs back to you. "I just got a call from the Commanders! Can you go to <destination> to see if you can find the person making those ships we had you scan?"`
 			choice
-				`	"Who are the Commodores?"`
+				`	"Who are the Commanders?"`
 					goto who
 				`	"I'll get going right away!"`
 					goto accept
@@ -119,8 +119,8 @@ mission "New Pirates 2"
 
 			label who
 			action
-				log "People" "The Commodores" "The Commodores are the military leaders of Fire Corporation"
-			`	"The Commodores are the military leaders of Fire Corporation."`
+				log "People" "The Commanders" "The Commanders are the military leaders of Fire Corporation"
+			`	"The Commanders are the military leaders of Fire Corporation."`
 			choice
 				`	"Thanks, I'll go to <destination>."`
 					goto accept

@@ -59,10 +59,12 @@ Fire Middle (Ideal: 35):
 18b. Run away.
 19. Inform Fire Corporation (on Zenith) of the branch on New Tortuga.
 20. Lead an attack on New Tortuga. (branch escapes)
-21. Hunt for a Slicer along with the Commodores (3 different colored Short Swords) (Found in Atik)
+21. Hunt for a Slicer along with the Commanders (3 different colored Short Swords) (Found in Atik)
 22. Gather up at least 3 Jump Drives (more=more pay and a bigger fleet later) and return to Zenith
-23. Lead a fleet of Fire Corporation ships (with the Commodores) to Orbona because that's where some escaping pirates were last seen. There is no waypoint in Hidden Queen, but you need it as a visited system to complete the mission.
+23. Lead a fleet of Fire Corporation ships (with the Commanders) to Orbona because that's where some escaping pirates were last seen. There is no waypoint in Hidden Queen, but you need it as a visited system to complete the mission.
 24. Attack Crown of Secrecy.
 25. Find the surviving manufacturers.
 26. The manufacturers launch in a stolen Flaming Sword - you must DISABLE it.
-27. 
+27. A massive pirate attack comes to protect their secret system.
+28. Gather reinforcements from Zenith. (the Commanders took Jump Drives from the pirates.)
+29. Pirates took Crown of Secrecy back when you were away. (Attack them)
