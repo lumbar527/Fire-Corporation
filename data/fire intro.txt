@@ -9,6 +9,7 @@ mission "Bounty Hunting (Surprise)"
 	to offer
 		"combat rating" > 600
 		random < 40 + ("surprise warlord" * 10)
+		"never" # because of the incompleteness and untested state of the storyline
 	source
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
 		attributes "rim" "south" "north" "dirt belt" "core" "frontier"
