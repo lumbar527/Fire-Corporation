@@ -4,6 +4,7 @@
 # Medium hunt missions [x]
 # Fleet hunt missions [x]
 # Missions for recruiting FC escorts [x]
+# Missions for recruiting FC additions to your fleet (idea thanks to @Fzzr in endless-sky/endless-sky#8894) [x]
 # Fleets for use in missions [x]
 # Bounty governments [x]
 # Phrases [x]
@@ -23,7 +24,6 @@ mission "Small fire hunt [0]"
 	npc board
 		government "Bounty (FC)"
 		personality heroic staying target
-		names "pirate"
 		names "pirate"
 		system
 			distance 1 3
@@ -49,7 +49,6 @@ mission "Small fire hunt [1]"
 		government "Bounty (FC)"
 		personality heroic staying target
 		names "pirate"
-		names "pirate"
 		system
 			distance 1 3
 		fleet "Small FC Bounty"
@@ -73,7 +72,6 @@ mission "Small fire hunt [2]"
 	npc board
 		government "Bounty (FC)"
 		personality heroic staying target
-		names "pirate"
 		names "pirate"
 		system
 			distance 1 3
@@ -99,7 +97,6 @@ mission "Small fire hunt [3]"
 		government "Bounty (FC)"
 		personality heroic staying target
 		names "pirate"
-		names "pirate"
 		system
 			distance 1 3
 		fleet "Small FC Bounty"
@@ -123,7 +120,6 @@ mission "Medium fire hunt [0]"
 	npc board
 		government "Bounty (FC)"
 		personality heroic staying target
-		names "pirate"
 		names "pirate"
 		system
 			distance 1 2
@@ -149,7 +145,6 @@ mission "Medium fire hunt [1]"
 		government "Bounty (FC)"
 		personality heroic staying target
 		names "pirate"
-		names "pirate"
 		system
 			distance 1 2
 		fleet "Medium FC Bounty"
@@ -173,7 +168,6 @@ mission "Medium fire hunt [2]"
 	npc board
 		government "Bounty (FC)"
 		personality heroic staying target
-		names "pirate"
 		names "pirate"
 		system
 			distance 1 2
@@ -199,7 +193,6 @@ mission "Medium fire hunt [3]"
 		government "Bounty (FC)"
 		personality heroic staying target
 		names "pirate"
-		names "pirate"
 		system
 			distance 1 2
 		fleet "Medium FC Bounty"
@@ -224,7 +217,6 @@ mission "Fleet fire hunt [0]"
 		government "Bounty (FC)"
 		personality heroic staying target
 		names "pirate"
-		names "pirate"
 		system
 			distance 1 2
 		fleet "Fleet FC Bounty"
@@ -247,7 +239,6 @@ mission "Fleet fire hunt [1]"
 	npc kill
 		government "Bounty (FC)"
 		personality heroic staying target
-		names "pirate"
 		names "pirate"
 		system
 			distance 1 2
@@ -272,7 +263,6 @@ mission "Fleet fire hunt [2]"
 		government "Bounty (FC)"
 		personality heroic staying target
 		names "pirate"
-		names "pirate"
 		system
 			distance 1 2
 		fleet "Fleet FC Bounty"
@@ -296,7 +286,6 @@ mission "Fleet fire hunt [3]"
 		government "Bounty (FC)"
 		personality heroic staying target
 		names "pirate"
-		names "pirate"
 		system
 			distance 1 2
 		fleet "Fleet FC Bounty"
@@ -306,6 +295,7 @@ mission "Fleet fire hunt [3]"
 		dialog `The Fire Corporation officials of <planet> are grateful for your assistance and give you <payment>.`
 
 mission "Hire escorts (FC) [0]"
+	repeat
 	job
 	name "Hire Escorts"
 	description `A small fleet of Fire Corporation ships will escort you until <deadline>. You must give them 300,000 credits.`
@@ -327,6 +317,7 @@ mission "Hire escorts (FC) [0]"
 		dialog `Your Fire Corporation escorts are leaving. You pay them 300,000 credits.`
 
 mission "Hire escorts (FC) [1]"
+	repeat
 	job
 	name "Hire Escorts"
 	description `A small fleet of Fire Corporation ships will escort you until <deadline>. You must give them 300,000 credits.`
@@ -348,6 +339,7 @@ mission "Hire escorts (FC) [1]"
 		dialog `Your Fire Corporation escorts are leaving. You pay them 300,000 credits.`
 
 mission "Hire escorts (FC) [2]"
+	repeat
 	job
 	name "Hire Escorts"
 	description `A small fleet of Fire Corporation ships will escort you until <deadline>. You must give them 300,000 credits.`
@@ -369,6 +361,7 @@ mission "Hire escorts (FC) [2]"
 		dialog `Your Fire Corporation escorts are leaving. You pay them 300,000 credits.`
 
 mission "Hire escorts (FC) [3]"
+	repeat
 	job
 	name "Hire Escorts"
 	description `A small fleet of Fire Corporation ships will escort you until <deadline>. You must give them 300,000 credits.`
@@ -388,6 +381,86 @@ mission "Hire escorts (FC) [3]"
 	on fail
 		payment -300000
 		dialog `Your Fire Corporation escorts are leaving. You pay them 300,000 credits.`
+
+mission "Recruit escorts (Firestorm)"
+	repeat
+	job
+	name "Add a <npc model> to your fleet"
+	description `A <npc model> from Fire Corporation will join your fleet for a daily fee of 10,000 credits.`
+	source
+		government Republic "Free Worlds" Syndicate # no Independent because "they are simply retired pirates."
+	to offer
+		has "License: Friendly"
+		# no combat rating or cargo check because they don't care. They'll do it if you pay.
+	npc accompany save
+		government "Fire Corporation (Hunters)
+		personality
+		names "bounty hunter"
+		ship "Firestorm"
+	daily
+		payment -10000
+	to complete
+		"never"
+
+mission "Recruit escorts (Knife)"
+	repeat
+	job
+	name "Add a <npc model> to your fleet"
+	description `A <npc model> from Fire Corporation will join your fleet for a daily fee of 5,000 credits.`
+	source
+		government Republic "Free Worlds" Syndicate # no Independent because "they are simply retired pirates."
+	to offer
+		has "License: Friendly"
+		# no combat rating or cargo check because they don't care. They'll do it if you pay.
+	npc accompany save
+		government "Fire Corporation (Hunters)
+		personality
+		names "bounty hunter"
+		ship "Knife"
+	daily
+		payment -5000
+	to complete
+		"never"
+
+mission "Recruit escorts (Fire Assassin)"
+	repeat
+	job
+	name "Add a <npc model> to your fleet"
+	description `A <npc model> from Fire Corporation will join your fleet for a daily fee of 7,000 credits.`
+	source
+		government Republic "Free Worlds" Syndicate # no Independent because "they are simply retired pirates."
+	to offer
+		has "License: Friendly"
+		# no combat rating or cargo check because they don't care. They'll do it if you pay.
+	npc accompany save
+		government "Fire Corporation (Hunters)
+		personality
+		names "bounty hunter"
+		ship "Fire Assassin"
+	daily
+		payment -7000
+	to complete
+		"never"
+
+mission "Recruit escorts (Short Sword)"
+	repeat
+	job
+	name "Add a <npc model> to your fleet"
+	description `A <npc model> from Fire Corporation will join your fleet for a daily fee of 7,000 credits.`
+	source
+		government Republic "Free Worlds" Syndicate # no Independent because "they are simply retired pirates."
+	to offer
+		has "License: Friendly"
+		# no combat rating or cargo check because they don't care. They'll do it if you pay.
+	npc accompany save
+		government "Fire Corporation (Hunters)
+		personality
+		names "bounty hunter"
+		ship "Short Sword"
+	daily
+		payment -7000
+	to complete
+		"never"
 
 fleet "Small FC Bounty"
 	government "Bounty (FC)"
